@@ -22,17 +22,61 @@ A full-stack application for selling and purchasing online courses. Built with N
 - Database: MongoDB (via Mongoose)
 
 ## 📁 Project Structure
-├── public/ # Frontend HTML/CSS/JS files
-├── routers/ # Route handling for admin and user
-├── middlewares/ # JWT and role-based auth
-├── index.js # Entry point
+
+Course-selling-app/
+├── index.js # Main server file
 ├── db.js # MongoDB connection
-├── config.js # JWT secrets (linked to .env)
-📌 Author
+├── config.js # Secret keys (moved to .env)
+├── package.json
+├── package-lock.json
+├── .gitignore
+├── .env.example # Template for environment variables
+│
+├── routers/
+│ ├── user.js # User-related routes
+│ ├── admin.js # Admin-related routes
+│ └── course.js # Course-related routes
+│
+├── middlewares/
+│ ├── user.js # Auth middleware for users
+│ └── admin.js # Auth middleware for admins
+│
+└── public/
+├── index.html # Landing page
+├── style.css # Global styles
+├── script.js # Frontend logic
+├── courses.html # Course preview
+├── purchases.html # User's purchases
+├── user.html # User dashboard
+├── user-login.html # User login page
+├── admin.html # Admin dashboard
+├── admin-login.html # Admin login page
+└── admin-dashboard.html # Admin course panel
+
+🙋 Author
 Ram Pareek
 
-GitHub: rampareek01
+GitHub: @rampareek01
 
 LinkedIn: Ram Pareek
+
+Email: heyram.exe@gmail.com
+
+📜 License
+This project is licensed under the MIT License.
+
+✨ Future Improvements
+Add Stripe/Paytm payment gateway
+
+Add file upload for course images
+
+Add email verification via OTP
+
+Add ratings and reviews for courses
+
+Improve UI with Tailwind or Bootstrap
+
+
+
 
 
