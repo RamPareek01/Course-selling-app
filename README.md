@@ -21,38 +21,7 @@ A full-stack application for selling and purchasing online courses. Built with N
 - Backend: Node.js, Express
 - Database: MongoDB (via Mongoose)
 
-## 📁 Project Structure
-
-Course-selling-app/
-├── index.js # Main server file
-├── db.js # MongoDB connection
-├── config.js # Secret keys (moved to .env)
-├── package.json
-├── package-lock.json
-├── .gitignore
-├── .env.example # Template for environment variables
-│
-├── routers/
-│ ├── user.js # User-related routes
-│ ├── admin.js # Admin-related routes
-│ └── course.js # Course-related routes
-│
-├── middlewares/
-│ ├── user.js # Auth middleware for users
-│ └── admin.js # Auth middleware for admins
-│
-└── public/
-├── index.html # Landing page
-├── style.css # Global styles
-├── script.js # Frontend logic
-├── courses.html # Course preview
-├── purchases.html # User's purchases
-├── user.html # User dashboard
-├── user-login.html # User login page
-├── admin.html # Admin dashboard
-├── admin-login.html # Admin login page
-└── admin-dashboard.html # Admin course panel
-
+<pre><code>## 🏗️ Project Structure ``` Course-selling-app/ ├── index.js # Main server file ├── db.js # MongoDB connection ├── config.js # Secret keys (moved to .env) ├── package.json ├── package-lock.json ├── .gitignore ├── .env.example # Template for environment variables │ ├── routers/ # Route handlers │ ├── user.js # User-related routes │ ├── admin.js # Admin-related routes │ └── course.js # Course-related routes │ ├── middlewares/ # Authentication middleware │ ├── user.js # Auth middleware for users │ └── admin.js # Auth middleware for admins │ └── public/ # Static frontend ├── index.html # Landing page ├── style.css # Global styles ├── script.js # Frontend logic ├── courses.html # Course preview ├── purchases.html # User's purchases ├── user.html # User dashboard ├── user-login.html # User login page ├── admin.html # Admin dashboard ├── admin-login.html # Admin login page └── admin-dashboard.html # Admin course panel ``` </code></pre>
 🙋 Author
 Ram Pareek
 
