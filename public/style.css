@@ -1,0 +1,103 @@
+/* 🔁 Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom right, #e0f7fa, #ffffff);
+  padding: 30px;
+  color: #333;
+}
+
+/* 🧠 Header */
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+header h1 {
+  font-size: 2rem;
+  color: #00695c;
+}
+
+/* 📦 Form Box / Signup/Login Style */
+.signup-box,
+form,
+.content-box {
+  max-width: 400px;
+  background: white;
+  margin: auto;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* 🔠 Form Headings */
+.signup-box h2,
+.content-box h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+/* 🔤 Input Fields */
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+/* 🔘 Buttons */
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  background-color: #00bfa5;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  background-color: #00897b;
+}
+
+/* 📚 Course Section */
+.course-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+.course-card {
+  background: #fff;
+  width: 260px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s;
+}
+.course-card:hover {
+  transform: scale(1.03);
+}
+.course-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .course-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
