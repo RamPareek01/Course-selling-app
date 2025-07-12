@@ -1,5 +1,5 @@
 const mongoose =require("mongoose")
-mongoose.connect("mongodb+srv://ram404:Test1234@cluster0.jdadeww.mongodb.net/coursera?retryWrites=true&w=majority&authSource=admin")
+mongoose.connect(process.env.MONGO_URL)
 const Schema=mongoose.Schema
 const ObjectId=mongoose.Types.ObjectId
 const userSchema= new Schema({
